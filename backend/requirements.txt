@@ -1,0 +1,20 @@
+# FastAPI and ASGI server
+fastapi>=0.100.0,<0.111.0
+uvicorn[standard]>=0.23.0,<0.25.0
+
+# Data handling and validation
+pandas>=2.0.0,<2.2.0
+pydantic>=2.0.0,<2.6.0
+openpyxl>=3.1.0,<3.2.0 # For Pandas Excel read/write
+
+# For form data (e.g. file uploads, often useful with FastAPI)
+python-multipart>=0.0.6,<0.0.7
+
+# Testing - these are typically in a requirements-dev.txt but for simplicity here
+pytest>=7.4.0,<7.5.0
+requests>=2.31.0,<2.32.0 # TestClient dependency, also good for general HTTP tasks
+
+# For linting and type checking (optional, but good practice as per issue)
+# These are development dependencies.
+# ruff
+# mypy
